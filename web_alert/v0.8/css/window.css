@@ -1,0 +1,39 @@
+.window_boundBoxing{
+    position: fixed;
+    border: 2px solid red;
+    box-shadow: 0 0 12px pink;
+}
+.window_alertBtn{
+    position: absolute;
+    width: 100px;
+    left: 50%;
+    margin-left: -50px;
+    bottom: 10px;
+}
+.window_header{
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}
+.window_body{
+    padding: 10px;
+}
+.window_closeBtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    background: aqua;
+    color: white;
+    cursor: pointer;
+}
+.window_alertBtn{
+    width: 100px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -50px;
+    /*background: #000;*/
+}

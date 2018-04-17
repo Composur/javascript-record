@@ -1,0 +1,22 @@
+.window_boundBoxing{
+    position: fixed;
+    border: 2px solid red;
+    box-shadow: 0 0 12px pink;
+}
+.window_boundBoxing input{
+    position: absolute;
+    width: 100px;
+    left: 50%;
+    margin-left: -50px;
+    bottom: 10px;
+}
+.window_header{
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}
+.window_body{
+    padding: 10px;
+}
