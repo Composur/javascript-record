@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Tabs</title>
+  <link rel="stylesheet" href="index.css">
+  <body>
+    <div class="wrapper">
+        <div class="tabs">
+          <ol data-role="tabs-nav">
+            <li>选项一</li>
+            <li>选项二</li>
+          </ol>
+          <ol data-role="tabs-panes">
+            <li>
+              <div class="circle">
+                1
+              </div>
+            </li>
+            <li>
+              <div class="circle">
+                2
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+  </body>
+  <script src="index.js"></script>
+  <script>
+    new Tabs({
+      element: document.querySelectorAll('.tabs')[0]
+    })
+  </script>
+</html>
