@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>pages</title>
+</head>
+<body>
+    <div>
+        <p>
+          这个分页器会在控制台打印出页数
+        </p>
+        <div class="pager"> </div>
+      </div>
+      <div>
+        <p>
+          这个分页器会改变 url
+        </p>
+        <div class="pager"> </div>
+      </div>
+</body>
+<script src="index.js"></script>
+<script>
+     let pagers = document.querySelectorAll('.pager')
+    new Pager({
+      element: pagers[0],
+      currentPage: 1,
+      totalPage: 100,
+    })
+    pagers[0].addEventListener('pageChange', (e)=>{
+      console.log(e.detail.page)
+    })
+
+    new Pager({
+      element: pagers[1],
+      currentPage: parseInt(bom.queryString.get('page'),10),
+      totalPage: 100,
+      pageQuery: 'page'
+    })
+</script>
+</html>
