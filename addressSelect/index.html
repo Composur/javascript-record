@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>address</title>
+    <style>
+        .container{
+            text-align: center;
+            margin-top: 10%;
+        }
+        .btn{
+            border: none;
+            opacity: 0.7;
+            background: black;
+            cursor: pointer;
+            color: #ccc;
+            font-size: 20px;
+        }
+        .btn:hover{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="btn">请点击</button>
+    </div>
+    <script>
+        let $=function(seletor){
+            return document.querySelector(seletor)
+        }
+        let btn=$('btn').onclick(function(){
+            console.log(btn)
+        })
+    </script>
+</body>
+</html>
